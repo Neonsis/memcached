@@ -6,7 +6,7 @@ import org.junit.rules.ExpectedException;
 import org.neonsis.memcached.exception.MemcachedException;
 
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class VersionTest {
 

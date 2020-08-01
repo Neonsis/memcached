@@ -2,13 +2,13 @@ package org.neonsis.memcached.model;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class AbstractPackageTest {
 
     private static AbstractPackage newInstance(byte[] array) {
-        return new AbstractPackage(array) {
-        };
+        return new AbstractPackage(array) {};
     }
 
     @Test

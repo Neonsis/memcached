@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.neonsis.memcached.exception.MemcachedException;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class StatusTest {
 

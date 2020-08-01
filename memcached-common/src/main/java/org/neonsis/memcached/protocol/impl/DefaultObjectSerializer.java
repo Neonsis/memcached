@@ -14,7 +14,7 @@ public class DefaultObjectSerializer implements ObjectSerializer {
         }
 
         if (!(object instanceof Serializable)) {
-            throw new MemcachedException("Class + " + object.getClass().getName() + " should implement java.io.Serializable interface");
+            throw new MemcachedException("Class " + object.getClass().getName() + " should implement java.io.Serializable interface");
         }
 
         try {
@@ -42,7 +42,7 @@ public class DefaultObjectSerializer implements ObjectSerializer {
 
             return ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
-            throw new MemcachedException("Cant convert byte array to object : " + e.getMessage(), e);
+            throw new MemcachedException("Cant convert byte array to object: " + e.getMessage(), e);
         }
     }
 }
