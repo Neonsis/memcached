@@ -32,6 +32,6 @@ public enum Version {
 
     @Override
     public String toString() {
-        return String.format("%s,%s", high, low);
+        return String.format("%s.%s", high, low);
     }
 }
