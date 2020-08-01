@@ -11,5 +11,12 @@
 
     <artifactId>memcached-client</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.neonsis</groupId>
+            <artifactId>memcached-common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
