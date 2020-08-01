@@ -19,7 +19,7 @@ public abstract class AbstractPackage {
         this.data = data;
     }
 
-    public boolean hasData() {
+    public final boolean hasData() {
         return data != null && data.length > 0;
     }
 }
