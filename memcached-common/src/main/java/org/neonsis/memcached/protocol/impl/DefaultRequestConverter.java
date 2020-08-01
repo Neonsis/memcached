@@ -42,7 +42,7 @@ public class DefaultRequestConverter extends AbstractPackageConverter implements
     }
 
     @Override
-    public void writeRequest(OutputStream outputStream, Request request) throws Exception {
+    public void writeRequest(OutputStream outputStream, Request request) throws IOException {
         DataOutputStream dos = new DataOutputStream(outputStream);
         dos.writeByte(getVersionByte());
         dos.writeByte(request.getCommand().getByteCode());
