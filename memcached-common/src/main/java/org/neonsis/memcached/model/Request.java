@@ -62,7 +62,7 @@ public class Request extends AbstractPackage {
             s.append("=").append(getData().length).append(" bytes");
         }
         if (hasTtl()) {
-            s.append(" (").append(new Date(ttl)).append(')');
+            s.append("(").append(new Date(ttl)).append(')');
         }
         return s.toString();
     }
