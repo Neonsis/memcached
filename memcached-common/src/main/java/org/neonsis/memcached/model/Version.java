@@ -4,7 +4,7 @@ import org.neonsis.memcached.exception.MemcachedException;
 
 public enum Version {
 
-    VERSION_0_0(0, 0),
+    VERSION_0_0(0, 0), // For tests
 
     VERSION_1_0(1, 0);
 

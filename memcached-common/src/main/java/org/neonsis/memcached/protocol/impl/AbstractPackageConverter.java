@@ -8,7 +8,7 @@ public abstract class AbstractPackageConverter {
     protected void checkProtocolVersion(byte versionByte) {
         Version version = Version.valueOf(versionByte);
         if (version != Version.VERSION_1_0) {
-            throw new MemcachedException("Unsupported protocol version: " + version);
+            throw new MemcachedException("Unsupported protocol Version: " + version);
         }
     }
 

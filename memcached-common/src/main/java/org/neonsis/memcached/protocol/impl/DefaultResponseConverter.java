@@ -24,7 +24,7 @@ public class DefaultResponseConverter extends AbstractPackageConverter implement
     }
 
     @Override
-    public void writeRequest(OutputStream outputStream, Response response) throws IOException {
+    public void writeResponse(OutputStream outputStream, Response response) throws IOException {
         DataOutputStream dataOutputStream = new DataOutputStream(outputStream);
         dataOutputStream.writeByte(getVersionByte());
         dataOutputStream.writeByte(response.getStatus().getByteCode());
