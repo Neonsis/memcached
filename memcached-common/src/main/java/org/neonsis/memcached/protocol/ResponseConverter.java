@@ -10,5 +10,5 @@ public interface ResponseConverter {
 
     Response readResponse(InputStream inputStream) throws IOException;
 
-    void writeRequest(OutputStream outputStream, Response request) throws IOException;
+    void writeRequest(OutputStream outputStream, Response response) throws IOException;
 }

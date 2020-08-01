@@ -1,6 +1,6 @@
 package org.neonsis.memcached.model;
 
-public class AbstractPackage {
+public abstract class AbstractPackage {
 
     private byte[] data;
 
