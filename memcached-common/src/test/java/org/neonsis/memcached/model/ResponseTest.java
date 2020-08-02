@@ -15,7 +15,7 @@ public class ResponseTest {
     @Test
     public void toStringWithData() {
         Response response = new Response(Status.ADDED);
-        response.setData(new byte[]{1,2,3});
+        response.setData(new byte[]{1, 2, 3});
         assertEquals("ADDED [3 bytes]", response.toString());
     }
 }
