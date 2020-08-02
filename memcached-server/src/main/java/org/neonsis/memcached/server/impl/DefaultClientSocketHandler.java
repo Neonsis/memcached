@@ -28,7 +28,7 @@ class DefaultClientSocketHandler implements ClientSocketHandler {
         this.serverConfig = serverConfig;
     }
 
-    protected boolean isStopRun() {
+    protected boolean interrupted() {
         return Thread.interrupted();
     }
 
@@ -40,7 +40,7 @@ class DefaultClientSocketHandler implements ClientSocketHandler {
             CommandHandler commandHandler = serverConfig.getCommandHandler();
             InputStream in = socket.getInputStream();
             OutputStream out = socket.getOutputStream();
-            while (!isStopRun()) {
+            while (!interrupted()) {
                 try {
                     Request request = requestConverter.readRequest(in);
                     Response response = commandHandler.handle(request);

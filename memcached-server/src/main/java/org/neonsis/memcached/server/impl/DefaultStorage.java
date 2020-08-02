@@ -116,7 +116,7 @@ class DefaultStorage implements Storage {
             this.clearDataIntervalInMs = clearDataIntervalInMs;
         }
 
-        protected boolean isStopRun() {
+        protected boolean interrupted() {
             return Thread.interrupted();
         }
 
@@ -127,7 +127,7 @@ class DefaultStorage implements Storage {
         @Override
         public void run() {
             LOGGER.debug("ClearExpiredDataJobThread started with interval {} ms", clearDataIntervalInMs);
-            while (!isStopRun()) {
+            while (!interrupted()) {
                 LOGGER.trace("Invoke clear job");
                 for (Map.Entry<String, StorageItem> entry : map.entrySet()) {
                     if (entry.getValue().isExpired()) {
