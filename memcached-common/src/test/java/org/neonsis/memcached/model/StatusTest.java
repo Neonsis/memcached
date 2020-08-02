@@ -32,11 +32,11 @@ public class StatusTest {
 
     @Test
     public void getByteCode() {
-        assertEquals(0,Status.ADDED.getByteCode());
-        assertEquals(1,Status.REPLACED.getByteCode());
-        assertEquals(2,Status.GOTTEN.getByteCode());
-        assertEquals(3,Status.NOT_FOUND.getByteCode());
-        assertEquals(4,Status.REMOVED.getByteCode());
-        assertEquals(5,Status.CLEARED.getByteCode());
+        assertEquals(0, Status.ADDED.getByteCode());
+        assertEquals(1, Status.REPLACED.getByteCode());
+        assertEquals(2, Status.GOTTEN.getByteCode());
+        assertEquals(3, Status.NOT_FOUND.getByteCode());
+        assertEquals(4, Status.REMOVED.getByteCode());
+        assertEquals(5, Status.CLEARED.getByteCode());
     }
 }
