@@ -48,7 +48,7 @@ class DefaultServerConfig implements ServerConfig {
     }
 
     protected CommandHandler createCommandHandler() {
-        return null;
+        return new DefaultCommandHandler(storage);
     }
 
     protected InputStream getClassPathResourceInputStream(String classPathResource) {
@@ -155,7 +155,7 @@ class DefaultServerConfig implements ServerConfig {
 
     @Override
     public ClientSocketHandler buildNewClientSocketHandler(Socket clientSocket) {
-        return null;
+        return new DefaultClientSocketHandler(clientSocket, this);
     }
 
     @Override
